@@ -39,6 +39,9 @@
 	       document.body.setHomePage('http://www.baidu.com');
 	    });
 
+	    $(".tab-grids").children().hide();
+	    $("#tab1").show();
+
 	    $(".tabs-menu").children("li").click(function(){
 	    	var text = $(this).attr("tabname");
 	    	$(".tab-grids").children().hide();
@@ -52,7 +55,6 @@
 <!--start-banner-->
 	<div class="banner banner1" id="home">
 			<div class="header">
-
 			<div class="logo">
 				<a href="index.html"><img src="images/textlogo.png" alt=""></a>
 			</div>
@@ -204,7 +206,6 @@
 		</div>
 		</div>
 	</div>
-	
 	
 	
 	<!--start-footer-->

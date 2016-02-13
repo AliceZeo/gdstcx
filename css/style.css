@@ -529,7 +529,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	-ms-transition: 0.5s all ease;
 }
 .idea-top:nth-child(2){
-	margin-top:10em;
+	margin-top:5em;
 }
 .idea-left {
   	text-align: center;
@@ -1562,8 +1562,9 @@ ul.tabs-menu li a:hover{
   	font-size: 14px;
   	margin-top: 12px;
   	font-family: 'Open Sans', sans-serif;
-  	width: 69%;
+  	width: 90%;
   	font-weight: 500;
+  	text-indent: 2em;
 }
 .tabs-box {
   	width: 100%;
@@ -2365,7 +2366,7 @@ ul.tabs-menu {
   width: 25%;
 }
 .tab-grids {
-  width: 69%;
+  width: 90%;
 }
 .tab-grid h3 {
   font-size: 15px;
@@ -3998,13 +3999,15 @@ ul#filters {
 
 .indent-paragraph {
 	text-indent: 2em;
+	font-size: 20px !important;
 }
+
 
 .nav-contact {
 	float: right;
 	position: absolute;
 	top: 40px;
-	right: 30px;
+	right: 40px;
 }
 
 .page-operation {
@@ -4034,4 +4037,32 @@ ul#filters {
 
 .banner-top>h1{
 	margin-top: -40px;
+}
+
+.normal-paragraph {
+	font-size: 20px !important;
+}
+
+.contact {
+	font-size: 20px !important;
+}
+
+#addFavorite:hover {
+	cursor: pointer;
+}
+
+#setHomepage:hover {
+	cursor: pointer;
+}
+
+.page-license img{
+	width: 100%;
+}
+
+.license-list {
+	text-align: center;
+}
+
+.tabs-title {
+	cursor: pointer;
 }

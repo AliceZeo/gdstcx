@@ -1,63 +1,80 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Planeto a Corporate Category Flat Bootstarp responsive Website Template| Contact :: w3layouts</title>
+<title>汕头市创兴废弃油脂回收有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Planeto Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="汕头市 创兴 废弃油脂回收 有限公司" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <script src="js/jquery-1.11.0.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
-<!---- start-smoth-scrolling---->
+<link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
 
-<!--start-smoth-scrolling-->
+		$("#addFavorite").click(function() {
+            if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
+                window.sidebar.addPanel(document.title,window.location.href,'');
+            } else if(window.external && ('AddFavorite' in window.external)) { // IE Favorite
+                window.external.AddFavorite(location.href,document.title); 
+            } else if(window.opera && window.print) { // Opera Hotlist
+                this.title=document.title;
+                return true;
+            } else { // webkit - safari/chrome
+                alert('请按下  ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D 键将此页加入收藏.');
+            }
+        });
+
+        $("#setHomepage").on("click", function(){
+	       document.body.style.behavior='url(#default#homepage)';
+	       document.body.setHomePage('http://www.baidu.com');
+	    });
+	});
+</script>
+
 </head>
 <body>
 <!--start-banner-->
 	<div class="banner banner1" id="home">
 			<div class="header">
+
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""></a>
+				<a href="index.html"><img src="images/textlogo.png" alt=""></a>
 			</div>
+			<div class="clearfix"></div>
 			<div class="navigation">
 				 <span class="menu"></span> 
 					<ul class="navig">
-						<li><a href="index.html">HOME</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="about-us.html">ABOUT US</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="services.html">SERVICES</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="404.html">PROJECTS</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="carrers.html">CARRERS</a></li><span><img src="images/clk.png" alt="" /></span>
-						<li><a href="contact.html" class="active">CONTACT</a></li>
+						<li><a href="index.html">企业首页</a></li><span><img src="images/clk.png" alt="" /></span>
+						<li><a href="about-us.html">公司介绍</a></li><span><img src="images/clk.png" alt="" /></span>
+						<li><a href="services.html">资质证书</a></li><span><img src="images/clk.png" alt="" /></span>
+						<li><a href="carrers.html">公司动态</a></li><span><img src="images/clk.png" alt="" /></span>
+						<li><a href="contact.html"  class="active">联系我们</a></li>
 					</ul>
 			</div>
-				<div class="clearfix"></div>
+			<div class="clearfix"></div>
+
+			<div class="nav-contact">
+				<p class="page-operation"><span id="addFavorite">加入收藏</span> ｜ <span id="setHomepage">设为首页</span></p>
+				<p class="telephone">服务热线：0754—87123538</p>
+			</div>	
+
 			</div>
 			<div class="banner-main">
 				<div class="container">	
 					<div class="banner-top bnr-top">
-						<h1>Hey, come to contact with us</h1>
+						<h1>联系我们</h1>
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>	
@@ -68,78 +85,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					});
 				});
 		 </script>
-		 <!-- script-for-menu -->		
-	<!--end-banner-->
-	<!--start-banner-->
-	<div class="stop">
-		<div class="container">
-			<div class="stop-top">
-				<h3>STOP BY FOR A GOOD COFFEE</h3>
-			</div>
-			<div class="stop-bottom">
-				<div class="col-md-4 stop-left">
-					<div class="address">
-						<h4>ADDRESS</h4>
-						<p>Planeto Ltd.<span>Drayton Park 243</span>N5 1BU London</p>
-					</div>
-					<div class="email">
-						<h4>EMAIL</h4>
-						<p><a href="mailto:example@email.com">hello@planeto.com</a></p>
-					</div>
-					<div class="phone">
-						<h4>PHONE</h4>
-						<p>421.909.123.456</p>
-					</div>
-				</div>
-				<div class="col-md-8 stop-left">
-					<h4>SAY HELLO</h4>
-					<div class="stop-btm">
-						<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-						<input type="text" value="Website" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Website';}" />
-						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-				        <input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
-						<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-							<div class="s-btn">
-								<form>
-									<input type="submit" value="SEND MESSAGE">
-						    	</form>
-						    </div>	
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!--end-banner-->
+	
+	
 	<!--start-footer-->
 	<div class="footer">
 		<div class="container">
 			<div class="footer-main">
 				<div class="contact">
-					<div class="col-md-8 contact-left">
-						<a href="index.html"><img src="images/logo-2.png" alt="" /></a>
-						<p>Lorem ipsum dolor sit tamet, consectetur adipiscing elit. Quisque vel lobortis neque, nec dictum erat. Proin malesuada, neque at facilisis posuere, tortor arcu vulputate dui, in sodales sem lacus sit amet diam.</p>
-					</div>
-					<div class="col-md-4 contact-right">
-						<h3>QUICK CONTACTS</h3>
-						<p>421.909.123.456</p>
-						<p><a href="mailto:example@email.com">hello@planeto.com</a></p>
+					<div class="col-md-6 contact-left stop-left">
+						<div class="address">
+							<h4>地址</h4>
+							<p>汕头市龙湖区外砂镇金新公路东面2号</p>
+						</div>
+						<div class="email">
+							<h4>邮箱</h4>
+							<p><a href="mailto:3320085586@qq.com">3320085586@qq.com</a></p>
+						</div>
+						<div class="phone">
+							<h4>电话</h4>
+							<p>0754—87123538</p>
+						</div>
+						<div class="phone">
+							<h4>手机</h4>
+							<p>13553377088 , 13353087388</p>
+						</div>
+					</div> 
+					<div class="col-md-6 contact-left stop-left">
+						<div class="address">
+							<h4>在线QQ联系</h4>
+							<br>
+							<p><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=475228592&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:475228592:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></p>
+						</div>
+						
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="footer-bottom">
-					<div class="col-md-4 footer-left">
-						<ul>
-							<li><a href="#"><span class="fb"> </span></a></li>
-							<li><a href="#"><span class="twit"> </span></a></li>
-							<li><a href="#"><span class="sky"> </span></a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 footer-middle">
-						<p>Template by <a href="http://w3layouts.com/"> W3layouts</a></p>
+					
+					<div class="col-md-8 footer-left">
+						汕头市创兴废弃油脂回收有限公司 2016 &copy 版权所有 </p>
 					</div>
 					<div class="col-md-4 footer-right">
-						<p><a href="#home" class="scroll">TO THE TOP</a></p>
+						<p><a href="#home" class="scroll">返回顶部</a></p>
 					</div>
 					<div class="clearfix"></div>
 				</div>

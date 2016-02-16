@@ -4070,3 +4070,8 @@ ul#filters {
 .weixin-contact img{
 	width: 100%;
 }
+
+.text-header {
+	text-align: center;
+	font-size: 24px !important;
+}

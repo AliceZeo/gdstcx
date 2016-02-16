@@ -4066,3 +4066,7 @@ ul#filters {
 .tabs-title {
 	cursor: pointer;
 }
+
+.weixin-contact img{
+	width: 100%;
+}

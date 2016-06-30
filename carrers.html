@@ -8,7 +8,7 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
-<script src="/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript"  src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
 <link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.useso.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
@@ -42,8 +42,11 @@
 	    $(".tab-grids").children().hide();
 	    $("#tab1").show();
 
+	    console.log('here');
+
 	    $(".tabs-menu").children("li").click(function(){
 	    	var text = $(this).attr("tabname");
+	    	console.log('text', text);
 	    	$(".tab-grids").children().hide();
 	    	$("#" + text).show();
 	    });
@@ -125,8 +128,12 @@
 			</div>
 			<div class="tabs-box">
 			<ul class="tabs-menu">
-				<li tabname="tab1"><a class="tabs-title"> <span></span>汕头市创兴废弃油脂回收有限公司废弃油脂回收项目环境影响评价公众意见征集公告
-				</a></li>
+			<li tabname="tab1">
+				<a class="tabs-title"> <span></span>汕头市创兴废弃油脂回收有限公司废弃油脂回收项目环境影响评价公众意见征集公告</a>
+			</li>
+			<li tabname="tab2">
+				<a class="tabs-title"> <span></span>协助开展整治废弃油脂“添油灯”工作，我市仅批了两家合法回收废弃油脂企业</a>
+			</li>
 			</ul>
 			<div class="clearfix"> </div>
 			<div class="tab-grids">
@@ -139,6 +146,23 @@
 <p>本项目营运期产生的污染物为：恶臭、职工生活污水、冲洗地面的含油污水、运输和装卸过程的噪声、生活垃圾等。另外，废弃油脂在运输过程存在因事故或泄漏对沿途大气环境、水环境造成污染的环境风险。在采取相应的环境保护措施后，可以将营运期的污染因素控制在可接受范围内。</p>
 <p>汕头环境科学学会项目公示</p>
 
+
+				</div>
+				<div id="tab2" class="tab-grid">
+					<style type="text/css">
+.post1 img{
+	width: 100%;
+}
+
+					</style>
+<p class="text-header">协助开展整治废弃油脂“添油灯”工作，我市仅批了两家合法回收废弃油脂企业</p>
+<hr>
+<div class="post1">
+<img src="images/post1/p1.jpg" alt="" />
+<img src="images/post1/p2.jpg" alt="" />
+<img src="images/post1/p3.jpg" alt="" />
+<img src="images/post1/p4.jpg" alt="" />
+</div>
 
 				</div>
 				
